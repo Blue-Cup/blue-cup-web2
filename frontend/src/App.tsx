@@ -17,7 +17,7 @@ function App() {
 
   return (
     <Router>
-      <div className="grid-container">
+       <div className="grid-container">
         <link rel="stylesheet" href="style.css"></link>
         <title>Blue Cup</title>
         <body>
@@ -41,7 +41,7 @@ function App() {
                 </li>
 
                 <li>
-                  <a href="indext.html">Shirts</a>
+                  <a href="index.html">Shirts</a>
                 </li>
               </ul>
             </aside>
@@ -57,7 +57,7 @@ function App() {
           </div>
         </body>
       </div>
-    </Router>
+   </Router>
   );
 }
 
