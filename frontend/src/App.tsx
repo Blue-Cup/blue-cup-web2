@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home/Home";
@@ -21,7 +20,6 @@ function App() {
        <div className="grid-container">
         <link rel="stylesheet" href="style.css"></link>
         <title>Blue Cup</title>
-        <body>
           <div>
             <header className="header">
               <div className="brand">
@@ -60,7 +58,6 @@ function App() {
               &copy; 2022 Blue Cup
             </footer>
           </div>
-        </body>
       </div>
    </Router>
   );
