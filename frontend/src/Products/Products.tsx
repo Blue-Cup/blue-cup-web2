@@ -1,4 +1,4 @@
-import React ,{useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import axios from "axios";
 
 type Product = {
@@ -25,9 +25,9 @@ function Products() {
       headers: {
         "Content-Type": "application/json",
       },
-    })
-    .then((response) => setProducts(response.data))
-    .catch((error) => console.log(error));
+      })
+      .then((response) => setProducts(response.data))
+      .catch((error) => console.log(error));
       }, []);
 
 
@@ -35,7 +35,7 @@ return (
         <div className="content">
             <ul className="products">
             {products.map((product)=>(
-                  <li>
+                  <li key={product.id}>
                     <div className="product">
                       <img 
                         className = "product-image" 
