@@ -12,7 +12,7 @@ numberOfReviews: number;
 imageUrl: string;
 }
 
-let emptyProducts: any[] | (() => any[]) =[];
+const emptyProducts: Product[] = [];
   
 function Products() {
   const [products, setProducts]: [Product[], (products: Product[]) => void] 
