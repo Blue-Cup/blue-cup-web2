@@ -19,8 +19,7 @@ function Products() {
   = useState(emptyProducts);
   
   useEffect(() => {
-    // possibly axios.get<Product[]>("https://localhost:7250/catalog",
-    axios.get<Product[]>("https://localhost:7245/catalog",
+    axios.get<Product[]>("https://blue-cup-api.azurewebsites.net/catalog",
     {
       headers: {
         "Content-Type": "application/json",
